@@ -28,7 +28,7 @@ header {
 
     width: 100%;
     color: white;
-    background-image: url('/media/siteBanner.png');
+    background-image: url('https://jaimytuin.com/media/siteBanner.png');
     background-size: cover;
     background-position: center;
 }
