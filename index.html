@@ -1,59 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <!-- Default data -->
     <meta charset="UTF-8">
-    <title>Page not found</title>
-    <link rel="icon" type="image/x-icon" href="https://spud.jaimytuin.com/media/logos/spud.svg">
+    <title>JaimyTuin</title>
+    <link rel="icon" type="image/x-icon" href="/media/logos/DerpyGinger.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- embed -->
+    <meta property="og:title" content="Jaimy Tuin" />
+    <meta property="og:description" content="Dutch IT student with a diverse range of hobbies and skills." />
+    <meta property="og:image" content="/media/AIGinger.jpeg" />
+    <meta property="og:url" content="https://jaimytuin.com" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#3498db">
+
+    <!-- Styling -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="/css/temp.css">
-    <style>
-        body {
-            color: #fff;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-
-            height: 100vh;
-        }
-
-        img {
-            width: 200px;
-            margin-bottom: 30px;
-
-            -webkit-user-drag: none;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-
-        main>h1 {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://kit.fontawesome.com/6006becb07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <main>
-        <img src="https://spud.jaimytuin.com/media/chars/sadJaapie.png" alt="sad cockatiel bird cartoon">
-        <h1>The requested page could not be found</h1>
-        <p>You will be redirected to the main page shortly..</p>
-    </main>
-    <script>
-        function redirect() {
-            setTimeout(() => {
-                window.location.href = 'https://spud.jaimytuin.com';
-            }, 5000);
-        }
+    <!-- Topbar -->
+    <header>
+        <h1>JaimyTuin</h1>
+        <nav>
+            <ul class="nav-list">
+                <!-- <li>Social</li> -->
+                <li><span class="material-symbols-outlined" id="theme-toggle">light_mode</span></li>
+            </ul>
+        </nav>
+    </header>
 
-        window.onload = redirect;
-    </script>
+    <!-- Right sidebar -->
+    <aside>
+        <section id="socials">
+            <!-- Socials -->
+            <div id="socialIcons">
+                <h2>Socials</h2>
+                <a href="https://github.com/JaimyTuin223" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    @JaimyTuin223
+                </a>
+                <a href="https://www.youtube.com/@gingerproductions" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    Ginger Productions
+                </a>
+                <a href="https://twitter.com/jaimytuin223" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    @JaimyTuin223
+                </a>
+                <a href="https://www.npmjs.com/~jaimytuin" target="_blank">
+                    <i class="fa-brands fa-npm"></i>
+                    JaimyTuin
+                    <!-- <span class="external material-symbols-outlined">open_in_new</span> -->
+                </a>
+            </div>
+            <br>
+            <!-- Discord servers -->
+            <div id="servers">
+                <h2><i class="fa-brands fa-discord"></i> Servers</h2>
+                <div id="serverList">
+                    <img src="/media/logos/GingerProductions.jpeg" width="80px"
+                        alt="Ginger productions Discord server logo">
+                    <img src="/media/logos/SpudServerIcon.png" width="80px" alt="Spud support Discord server logo">
+                </div>
+                <div id="serverInfo"></div>
+            </div>
+        </section>
+    </aside>
+
+    <!-- Page content -->
+    <main>
+        <!-- About me -->
+        <section id="about">
+            <article>
+                <h2>Wie ben ik?</h2>
+                <p>Hoi, ik ben Jaimy, een Nederlandse IT-student met een breed scala aan hobby's en vaardigheden. Naast mijn passie voor ontwikkelen en tekenen, houd ik van gamen, tijd doorbrengen in de natuur en het beoefenen van vechtsporten. Oh, en ik ben ook nog eens heftruck gecertificeerd, haha.</p>
+                <p>Neem een kijkje bij een aantal van mijn projecten hieronder!</p>
+            </article>
+            <img src="/media/JaimyArt.png" alt="Jaimy drawing">
+        </section>
+
+        <br>
+    </main>
 </body>
+<script src="/scripts/theme.js"></script>
+<script src="/scripts/servers.js"></script>
+
 </html>
